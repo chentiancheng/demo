@@ -1,0 +1,588 @@
+html,
+body,
+.content {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+} //content
+.findList {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .header {
+        width: 100%;
+        height: 1.2rem;
+        //      background: red;
+        border-bottom: 0.02rem dashed #ccc;
+        display: flex;
+        flex-direction: row;
+        .h_left {
+            flex: 1;
+            img {
+                width: 2.5rem;
+                height: auto;
+                margin-top: .14rem;
+                margin-left: .3rem;
+            }
+        }
+        .h_right {
+            ul {
+                li {
+                    float: left;
+                    padding: 0 .35rem;
+                    line-height: 1.2rem;
+                    font-size: .48rem;
+                }
+            }
+        }
+    }
+    .section {
+        flex: 1;
+        background: #f6f6f6;
+        overflow-x: auto;
+        overflow-y: hidden;
+        .findSeach {
+            width: 100%;
+            height: 1.25rem;
+            background: #f6f6f6;
+            border-bottom: 1px solid #ccc;
+            box-sizing: border-box;
+            position: relative;
+            .findBox{
+                position: relative;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+               
+                background: royalblue;
+                ul{
+                   height: 100%;
+                    li{
+                        padding: .1rem;  
+                      background: #fff;
+                      border-bottom: .01rem solid #ccc;
+                    }
+                }
+            }
+            input {
+                display: block;
+                width: 90%;
+                margin-left: 5%;
+                margin-top: .18rem;
+                height: .90rem;
+                border: 0.02rem solid #b9b9b9;
+                outline: none;
+                border-radius: 0.14rem;
+                overflow: hidden;
+                text-indent: 1rem;
+                background: white url(../images/1_11.jpg) no-repeat;
+                background-size: .5rem;
+                background-position: .26rem center;
+            }
+        }
+        .findType {
+            display: flex;
+            flex-direction: row;
+            .findTypeLeft {
+                width: 2.64rem;
+                background: white;
+                ul {
+                    li {
+                        height: 1.92rem;
+                        width: 2.64rem;
+                        text-align: center;
+                        line-height: 1.92rem;
+                        border: 0.01rem solid #ccc;
+                        border-top: none;
+                        //                     box-sizing: border-box;
+                    }
+                }
+                .active {
+                    background: #f6f6f6;
+                    border-left: .14rem solid #4eacf6;
+                    //              -moz-border-radius-topleft: 0.04rem solid #ccc;
+                    border-top-left-radius: 0.1rem;
+                    border-bottom-left-radius: 0.1rem;
+                    border-right: none;
+                }
+            }
+            .findTypeRight {
+                flex: 1;
+                ul {
+                    li {
+                        height: 1.92rem;
+                        display: flex;
+                        flex-direction: row;
+                        line-height: 1.92rem;
+                        padding-left: .5rem;
+                        border-bottom: .01rem solid #ccc;
+                        img {
+                            display: block;
+                            width: 1.5rem;
+                            height: 1.5rem;
+                            margin-top: .24rem;
+                            margin-right: .24rem;
+                            background: #0aa3e9;
+                        }
+                        h2 {
+                            flex: 1;
+                            font-size: .43rem;
+                            font-weight: bold;
+                        }
+                        span {
+                            display: block;
+                            padding-right: .31rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer {
+        height: 1.05rem;
+        width: 100%;
+        background: #f8f8f8;
+        display: flex;
+        flex-direction: row;
+        span {
+            display: block;
+            line-height: 1.05rem;
+        }
+        span:first-child {
+            flex: 1;
+            margin-left: .2rem;
+        }
+        span:last-child {
+            img {
+                width: .5rem;
+                margin-right: .2rem;
+            }
+        }
+    }
+} //findList
+.foodList {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .header {
+        width: 100%;
+        height: 1.46rem;
+        box-sizing: border-box;
+        border-bottom: 0.01rem solid #ccc;
+        display: flex;
+        flex-direction: row;
+        p {
+            line-height: 1.46rem;
+        }
+        p:first-child {
+            img {
+                width: .28rem;
+                margin-top: .5rem;
+                margin-left: .4rem;
+            }
+        }
+        p:nth-child(2) {
+            flex: 1;
+            text-align: center;
+            font-size: .5rem;
+            font-weight: bold;
+            text-indent: 2rem;
+        }
+        P:last-child {
+            img {
+                margin-top: .4rem;
+            }
+            img:first-child {
+                width: .65rem;
+                margin-right: .59rem;
+            }
+            img:last-child {
+                width: .54rem;
+                margin-right: .4rem;
+            }
+        }
+    } //header
+    .section {
+        flex: 1;
+        overflow: auto;
+        .fxedtop {}
+        .foodShopList {
+            width: 100%;
+            height: 3.42rem;
+            border-bottom: 1px solid #cccc;
+            display: flex;
+            flex-direction: row;
+            padding-top: .6rem;
+            box-sizing: border-box;
+            .foodShopListLeft {
+                flex: 1;
+                padding-left: .51rem;
+                dl {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    dt {
+                        font-size: .45rem;
+                        font-weight: bold;
+                        width: 4.72rem;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        // overflow:hidden;
+                    }
+                    dd {
+                        color: #757575;
+                        a {
+                            color: #FF0000;
+                            font-weight: bold;
+                        }
+                    }
+                    .stares{
+                        display: flex;
+                        flex-direction: row;
+                    }
+                    dd:nth-child(2) {
+                        font-size: .4rem;
+                    }
+                    dd:last-child {
+                        margin-top: .26rem;
+                        button {
+                            background: none;
+                            border: 0.01rem solid #ccc;
+                            outline: none;
+                            margin-right: .16rem;
+                            padding: 0.05rem;
+                            border-radius: .04rem;
+                        }
+                    }
+                }
+            }
+            .foodShopListRight {
+                img {
+                    width: 2.1rem;
+                    height: 2.1rem;
+                    padding-right: .5rem;
+                }
+            }
+            //         background: red;
+        }
+    }
+} //foodList
+.findNavbar {
+    ul {
+        width: 100%;
+        height: 1.18rem;
+        border-bottom: 0.01rem solid #ccc;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        left: 0;
+        top: 0;
+        li {
+            flex: 1;
+            text-align: center;
+            line-height: 1.18rem;
+            img {
+                width: .2rem;
+                margin-left: .2rem;
+            }
+        }
+    }
+} //findNavbar
+.foodShopContent{
+    width: 100%;
+    height: 100%;
+    position: relative;
+//  display: flex;
+//  flex-direction: column;
+//  overflow: auto;
+
+    .header{
+        width: 100%;
+        height: 4.56rem;
+//      background:url(../img/12.jpg) ;
+        background-size:100% ;
+        display: flex;
+        flex-direction: row;
+        p:first-child{
+             flex: 1;
+        }
+        p:nth-child(2){
+            margin-right: .7rem;
+        }
+        p:last-child{
+            margin-right: .45rem;
+        }
+        img:first-child{
+            margin-top: .54rem;
+            margin-left: .45rem;
+           
+        }
+    }
+    .section{
+//      flex: 1;
+        background: #f4f4f4;
+//      overflow: auto;
+        .foodShopTitle{
+            width: 100%;
+            height: 2.82rem;
+            background: #4287ff;
+            color: #fff;
+            dl{
+                padding-left: .6rem;
+                dt{
+                    padding-top: .57rem;
+                    font-size: .53rem;
+                    
+                }
+                dd{
+                    
+                    span:last-child{
+                        img{
+                            width: .39rem;
+                        }
+                    }
+                }
+            }
+        }
+        .foodShopinfo{
+            width: 100%;
+            height: 3.42rem;
+            background: white;
+            p{
+                margin-left: .48rem;
+            }
+            p:first-child{
+                display: flex;
+                flex-direction: row;
+                padding-top: .47rem;
+                font-size: .4rem;
+                span{
+                    display: block;
+                }
+                span:nth-child(2){
+                    flex: 1;
+                }
+                img:first-child{
+                    width: .45rem;
+                    margin-right: .54rem;
+                }
+                img:last-child{
+                    width: .4rem;
+                }
+            }
+            p:last-child{
+                padding-top: .96rem;
+                img{
+                    width: .48rem;
+                    margin-right: .54rem;
+                }
+            }
+        }//foodShopinfo
+        .friendImg{
+            width: 100%;
+            height:6.84rem ;
+            background: #fff;
+            margin-top: .1rem;
+          .title{
+            width: 100%;
+            height: 1.62rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            b:first-child{
+                font-size: .4rem;
+                margin-left: .5rem;
+                font-weight: bold;
+            }
+            img{
+                width: .2rem;
+                margin-right: .5rem;
+                margin-left: .29rem;
+            }
+          
+          }
+          ul{
+              width: 100%;
+              height: 2.61rem;
+              display: flex;
+              flex-direction:row ;
+              li{
+                  flex: 1;
+                  justify-content: space-around;
+                  padding: .1rem ;
+                  img{
+                      width: 100%;
+                      height: 2.61rem;
+                  }
+              }
+          }
+          .contents{
+              margin-top: .54rem;
+              padding: 0 .48rem;
+              font-size: .36rem;
+              color: #757575;
+          }
+        }
+        
+    }//section
+    .moduleReturn{
+        width: 100%;
+        height: 100%;
+        background-color:rgba(0,0,0,.5);
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    
+}//foodShopContent
+.foodShopAddress{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction:column ;
+    
+    .header{
+        width: 90%;
+        height: 1.28rem;
+        display: flex;
+        flex-direction: row;
+        border: 1px solid #ccc;
+        margin: 0 5%;
+        background: #fff;
+        align-items: center;
+        border-radius: .18rem;
+        margin-top: .28rem;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 100;
+        span{
+            img{
+            width: .26rem;
+            margin-left: .48rem;
+            margin-right: .48rem;
+        }
+        }
+        a{
+            img{
+                width: .68rem;
+            }
+        }
+        a:last-child{
+            display: block;
+            padding: 0 .42rem;
+        }
+        input{
+            flex: 1;
+            border: none;
+            outline: none;
+           
+        }
+    }//header
+    .section{
+        flex: 1;
+         overflow-y: hidden;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .mymap{
+              width: 100%;
+            height: 100%;
+        }
+    }//section
+    .footer{
+        width: 100%;
+        height: 5.18rem;
+//      background: red;
+.foodShopListLeft {
+                flex: 1;
+                padding-left: .51rem;
+                padding-bottom: .39rem;
+                padding-right: .45rem;
+//              height: 2.60rem;
+//              box-sizing: border-box;
+                dl {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    padding-top: .66rem;
+                   border-bottom: 0.1rem solid #ccc;
+                    
+                    dt {
+                        font-size: .45rem;
+                        font-weight: bold;
+                        width: 4.72rem;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        // overflow:hidden;
+                    }
+                    dd {
+                        color: #757575;
+                        a {
+                            color: #FF0000;
+                            font-weight: bold;
+                        }
+                    }
+                    .stares{
+                        display: flex;
+                        flex-direction: row;
+                    }
+                    dd:first-child{
+                        margin-top: .36rem;
+                    }
+                    dd:nth-child(2) {
+                        font-size: .4rem;
+                    }
+                    dd:last-child {
+                        margin-top: .26rem;
+                        button {
+                            background: none;
+                            border: 0.01rem solid #ccc;
+                            outline: none;
+                            margin-right: .16rem;
+                            padding: 0.05rem;
+                            border-radius: .04rem;
+                        }
+                    }
+                }
+            }
+            .typeGo{
+               ul{
+                    display: flex;
+                     flex-direction:row ;
+                    
+                     box-sizing: border-box;
+                 li{
+                    flex: 1;
+//                  text-align: center;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    color: #63a4ff;
+                    font-size: .37rem;
+                    font-weight: bold;
+                     img{
+                        width: .35rem;
+                        margin-right: .25rem;
+                        
+                     }
+                 }
+               }
+            }
+    }
+}

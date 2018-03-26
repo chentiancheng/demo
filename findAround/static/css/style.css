@@ -1,0 +1,529 @@
+html,
+body,
+.content {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+.content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.findList {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.findList .header {
+  width: 100%;
+  height: 1.2rem;
+  border-bottom: 0.02rem dashed #ccc;
+  display: flex;
+  flex-direction: row;
+}
+.findList .header .h_left {
+  flex: 1;
+}
+.findList .header .h_left img {
+  width: 2.5rem;
+  height: auto;
+  margin-top: .14rem;
+  margin-left: .3rem;
+}
+.findList .header .h_right ul li {
+  float: left;
+  padding: 0 .35rem;
+  line-height: 1.2rem;
+  font-size: .48rem;
+}
+.findList .section {
+  flex: 1;
+  background: #f6f6f6;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.findList .section .findSeach {
+  width: 100%;
+  height: 1.25rem;
+  background: #f6f6f6;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+  position: relative;
+}
+.findList .section .findSeach .findBox {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: royalblue;
+}
+.findList .section .findSeach .findBox ul {
+  height: 100%;
+}
+.findList .section .findSeach .findBox ul li {
+  padding: .1rem;
+  background: #fff;
+  border-bottom: .01rem solid #ccc;
+}
+.findList .section .findSeach input {
+  display: block;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: .18rem;
+  height: .90rem;
+  border: 0.02rem solid #b9b9b9;
+  outline: none;
+  border-radius: 0.14rem;
+  overflow: hidden;
+  text-indent: 1rem;
+  background: #ffffff url(../images/1_11.jpg) no-repeat;
+  background-size: .5rem;
+  background-position: .26rem center;
+}
+.findList .section .findType {
+  display: flex;
+  flex-direction: row;
+}
+.findList .section .findType .findTypeLeft {
+  width: 2.64rem;
+  background: white;
+}
+.findList .section .findType .findTypeLeft ul li {
+  height: 1.92rem;
+  width: 2.64rem;
+  text-align: center;
+  line-height: 1.92rem;
+  border: 0.01rem solid #ccc;
+  border-top: none;
+}
+.findList .section .findType .findTypeLeft .active {
+  background: #f6f6f6;
+  border-left: .14rem solid #4eacf6;
+  border-top-left-radius: 0.1rem;
+  border-bottom-left-radius: 0.1rem;
+  border-right: none;
+}
+.findList .section .findType .findTypeRight {
+  flex: 1;
+}
+.findList .section .findType .findTypeRight ul li {
+  height: 1.92rem;
+  display: flex;
+  flex-direction: row;
+  line-height: 1.92rem;
+  padding-left: .5rem;
+  border-bottom: .01rem solid #ccc;
+}
+.findList .section .findType .findTypeRight ul li img {
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-top: .24rem;
+  margin-right: .24rem;
+  background: #0aa3e9;
+}
+.findList .section .findType .findTypeRight ul li h2 {
+  flex: 1;
+  font-size: .43rem;
+  font-weight: bold;
+}
+.findList .section .findType .findTypeRight ul li span {
+  display: block;
+  padding-right: .31rem;
+}
+.findList .footer {
+  height: 1.05rem;
+  width: 100%;
+  background: #f8f8f8;
+  display: flex;
+  flex-direction: row;
+}
+.findList .footer span {
+  display: block;
+  line-height: 1.05rem;
+}
+.findList .footer span:first-child {
+  flex: 1;
+  margin-left: .2rem;
+}
+.findList .footer span:last-child img {
+  width: .5rem;
+  margin-right: .2rem;
+}
+.foodList {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.foodList .header {
+  width: 100%;
+  height: 1.46rem;
+  box-sizing: border-box;
+  border-bottom: 0.01rem solid #ccc;
+  display: flex;
+  flex-direction: row;
+}
+.foodList .header p {
+  line-height: 1.46rem;
+}
+.foodList .header p:first-child img {
+  width: .28rem;
+  margin-top: .5rem;
+  margin-left: .4rem;
+}
+.foodList .header p:nth-child(2) {
+  flex: 1;
+  text-align: center;
+  font-size: .5rem;
+  font-weight: bold;
+  text-indent: 2rem;
+}
+.foodList .header P:last-child img {
+  margin-top: .4rem;
+}
+.foodList .header P:last-child img:first-child {
+  width: .65rem;
+  margin-right: .59rem;
+}
+.foodList .header P:last-child img:last-child {
+  width: .54rem;
+  margin-right: .4rem;
+}
+.foodList .section {
+  flex: 1;
+  overflow: auto;
+}
+.foodList .section .foodShopList {
+  width: 100%;
+  height: 3.42rem;
+  border-bottom: 1px solid #cccc;
+  display: flex;
+  flex-direction: row;
+  padding-top: .6rem;
+  box-sizing: border-box;
+}
+.foodList .section .foodShopList .foodShopListLeft {
+  flex: 1;
+  padding-left: .51rem;
+}
+.foodList .section .foodShopList .foodShopListLeft dl {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.foodList .section .foodShopList .foodShopListLeft dl dt {
+  font-size: .45rem;
+  font-weight: bold;
+  width: 4.72rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.foodList .section .foodShopList .foodShopListLeft dl dd {
+  color: #757575;
+}
+.foodList .section .foodShopList .foodShopListLeft dl dd a {
+  color: #FF0000;
+  font-weight: bold;
+}
+.foodList .section .foodShopList .foodShopListLeft dl .stares {
+  display: flex;
+  flex-direction: row;
+}
+.foodList .section .foodShopList .foodShopListLeft dl dd:nth-child(2) {
+  font-size: .4rem;
+}
+.foodList .section .foodShopList .foodShopListLeft dl dd:last-child {
+  margin-top: .26rem;
+}
+.foodList .section .foodShopList .foodShopListLeft dl dd:last-child button {
+  background: none;
+  border: 0.01rem solid #ccc;
+  outline: none;
+  margin-right: .16rem;
+  padding: 0.05rem;
+  border-radius: .04rem;
+}
+.foodList .section .foodShopList .foodShopListRight img {
+  width: 2.1rem;
+  height: 2.1rem;
+  padding-right: .5rem;
+}
+.findNavbar ul {
+  width: 100%;
+  height: 1.18rem;
+  border-bottom: 0.01rem solid #ccc;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+.findNavbar ul li {
+  flex: 1;
+  text-align: center;
+  line-height: 1.18rem;
+}
+.findNavbar ul li img {
+  width: .2rem;
+  margin-left: .2rem;
+}
+.foodShopContent {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.foodShopContent .header {
+  width: 100%;
+  height: 4.56rem;
+  background-size: 100% ;
+  display: flex;
+  flex-direction: row;
+}
+.foodShopContent .header p:first-child {
+  flex: 1;
+}
+.foodShopContent .header p:nth-child(2) {
+  margin-right: .7rem;
+}
+.foodShopContent .header p:last-child {
+  margin-right: .45rem;
+}
+.foodShopContent .header img:first-child {
+  margin-top: .54rem;
+  margin-left: .45rem;
+}
+.foodShopContent .section {
+  background: #f4f4f4;
+}
+.foodShopContent .section .foodShopTitle {
+  width: 100%;
+  height: 2.82rem;
+  background: #4287ff;
+  color: #fff;
+}
+.foodShopContent .section .foodShopTitle dl {
+  padding-left: .6rem;
+}
+.foodShopContent .section .foodShopTitle dl dt {
+  padding-top: .57rem;
+  font-size: .53rem;
+}
+.foodShopContent .section .foodShopTitle dl dd span:last-child img {
+  width: .39rem;
+}
+.foodShopContent .section .foodShopinfo {
+  width: 100%;
+  height: 3.42rem;
+  background: white;
+}
+.foodShopContent .section .foodShopinfo p {
+  margin-left: .48rem;
+}
+.foodShopContent .section .foodShopinfo p:first-child {
+  display: flex;
+  flex-direction: row;
+  padding-top: .47rem;
+  font-size: .4rem;
+}
+.foodShopContent .section .foodShopinfo p:first-child span {
+  display: block;
+}
+.foodShopContent .section .foodShopinfo p:first-child span:nth-child(2) {
+  flex: 1;
+}
+.foodShopContent .section .foodShopinfo p:first-child img:first-child {
+  width: .45rem;
+  margin-right: .54rem;
+}
+.foodShopContent .section .foodShopinfo p:first-child img:last-child {
+  width: .4rem;
+}
+.foodShopContent .section .foodShopinfo p:last-child {
+  padding-top: .96rem;
+}
+.foodShopContent .section .foodShopinfo p:last-child img {
+  width: .48rem;
+  margin-right: .54rem;
+}
+.foodShopContent .section .friendImg {
+  width: 100%;
+  height: 6.84rem ;
+  background: #fff;
+  margin-top: .1rem;
+}
+.foodShopContent .section .friendImg .title {
+  width: 100%;
+  height: 1.62rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.foodShopContent .section .friendImg .title b:first-child {
+  font-size: .4rem;
+  margin-left: .5rem;
+  font-weight: bold;
+}
+.foodShopContent .section .friendImg .title img {
+  width: .2rem;
+  margin-right: .5rem;
+  margin-left: .29rem;
+}
+.foodShopContent .section .friendImg ul {
+  width: 100%;
+  height: 2.61rem;
+  display: flex;
+  flex-direction: row ;
+}
+.foodShopContent .section .friendImg ul li {
+  flex: 1;
+  justify-content: space-around;
+  padding: .1rem ;
+}
+.foodShopContent .section .friendImg ul li img {
+  width: 100%;
+  height: 2.61rem;
+}
+.foodShopContent .section .friendImg .contents {
+  margin-top: .54rem;
+  padding: 0 .48rem;
+  font-size: .36rem;
+  color: #757575;
+}
+.foodShopContent .moduleReturn {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.foodShopAddress {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column ;
+}
+.foodShopAddress .header {
+  width: 90%;
+  height: 1.28rem;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #ccc;
+  margin: 0 5%;
+  background: #fff;
+  align-items: center;
+  border-radius: .18rem;
+  margin-top: .28rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
+.foodShopAddress .header span img {
+  width: .26rem;
+  margin-left: .48rem;
+  margin-right: .48rem;
+}
+.foodShopAddress .header a img {
+  width: .68rem;
+}
+.foodShopAddress .header a:last-child {
+  display: block;
+  padding: 0 .42rem;
+}
+.foodShopAddress .header input {
+  flex: 1;
+  border: none;
+  outline: none;
+}
+.foodShopAddress .section {
+  flex: 1;
+  overflow-y: hidden;
+}
+.foodShopAddress .section img {
+  width: 100%;
+  height: 100%;
+}
+.foodShopAddress .section .mymap {
+  width: 100%;
+  height: 100%;
+}
+.foodShopAddress .footer {
+  width: 100%;
+  height: 5.18rem;
+}
+.foodShopAddress .footer .foodShopListLeft {
+  flex: 1;
+  padding-left: .51rem;
+  padding-bottom: .39rem;
+  padding-right: .45rem;
+}
+.foodShopAddress .footer .foodShopListLeft dl {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: .66rem;
+  border-bottom: 0.1rem solid #ccc;
+}
+.foodShopAddress .footer .foodShopListLeft dl dt {
+  font-size: .45rem;
+  font-weight: bold;
+  width: 4.72rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.foodShopAddress .footer .foodShopListLeft dl dd {
+  color: #757575;
+}
+.foodShopAddress .footer .foodShopListLeft dl dd a {
+  color: #FF0000;
+  font-weight: bold;
+}
+.foodShopAddress .footer .foodShopListLeft dl .stares {
+  display: flex;
+  flex-direction: row;
+}
+.foodShopAddress .footer .foodShopListLeft dl dd:first-child {
+  margin-top: .36rem;
+}
+.foodShopAddress .footer .foodShopListLeft dl dd:nth-child(2) {
+  font-size: .4rem;
+}
+.foodShopAddress .footer .foodShopListLeft dl dd:last-child {
+  margin-top: .26rem;
+}
+.foodShopAddress .footer .foodShopListLeft dl dd:last-child button {
+  background: none;
+  border: 0.01rem solid #ccc;
+  outline: none;
+  margin-right: .16rem;
+  padding: 0.05rem;
+  border-radius: .04rem;
+}
+.foodShopAddress .footer .typeGo ul {
+  display: flex;
+  flex-direction: row ;
+  box-sizing: border-box;
+}
+.foodShopAddress .footer .typeGo ul li {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #63a4ff;
+  font-size: .37rem;
+  font-weight: bold;
+}
+.foodShopAddress .footer .typeGo ul li img {
+  width: .35rem;
+  margin-right: .25rem;
+}
